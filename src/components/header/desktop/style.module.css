@@ -1,0 +1,77 @@
+.headerWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  /* border-bottom: 0.8px solid #484848; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.headerContainer {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.leftInfo img {
+  width: 50px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.centerInfo {
+  display: flex;
+  gap: 25px;
+}
+.centerInfo p {
+  font-size: 19px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.centerInfo p:hover,
+.active {
+  color: #bb1f9a !important;
+}
+.rightInfo {
+  color: white;
+  background-color: pink;
+  border-radius: 50px;
+  height: fit-content;
+  padding: 6px 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  background: -moz-linear-gradient(199deg, #6b14d0 0%, #c62091 72%);
+  background: -webkit-linear-gradient(199deg, #6b14d0 0%, #c62091 72%);
+  background: -o-linear-gradient(199deg, #6b14d0 0%, #c62091 72%);
+  background: -ms-linear-gradient(199deg, #6b14d0 0%, #c62091 72%);
+  background: linear-gradient(199deg, #6b14d0 0%, #c62091 72%);
+}
+
+.rightInfo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.rightInfo:hover::before {
+  opacity: 1;
+  animation: shine 1s forwards;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(60deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(60deg);
+  }
+}
