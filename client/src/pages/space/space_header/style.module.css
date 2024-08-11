@@ -1,0 +1,49 @@
+.spaceWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+.spaceContainer {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+}
+
+/* ------leftInfo------ */
+.leftInfo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.leftInfo img {
+  width: 35px;
+}
+.leftInfo h1 {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+/* ------rightInfo------ */
+.rightInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap:10px;
+}
+.profileLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f9e6fd;
+  color: #bd01e3;
+  font-weight: 500;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+}
+.logoutIcon {
+  font-size: 27px;
+  color: #565656;
+  cursor: pointer;
+}

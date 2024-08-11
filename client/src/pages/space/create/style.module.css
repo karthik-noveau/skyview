@@ -1,0 +1,45 @@
+.createSpace {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  border-radius: 4px;
+}
+.createSpace input {
+  height: 28px !important;
+  box-shadow: none !important;
+}
+.createSpace Form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 4px;
+}
+.createSpace .btnWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10px;
+}
+.craeteBtn {
+  border: none;
+  font-size: 12px !important;
+  width: fit-content !important;
+  height: 25px !important;
+  padding: 0 13px;
+  color: #282828;
+  border-radius: 4px !important;
+  cursor: pointer;
+  background-color: #ededed;
+}
+.craeteBtn:hover {
+  color: #282828 !important;
+  background-color: #ededed !important;
+}
+.cancelBtn {
+  font-size: 17px;
+  color: #d63131;
+  cursor: pointer;
+  background-color: #ffebeb;
+  border-radius: 50%;
+  padding: 4px;
+}

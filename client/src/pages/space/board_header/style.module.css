@@ -1,0 +1,38 @@
+.boardWrapper {
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.spaceNameContainer {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+}
+
+.spaceNameContainer .leftInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.spaceNameContainer .leftInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+.spaceNameContainer .rightInfo {
+  background-color: #f0efef;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.spaceTitle {
+  font-size: 20px;
+  font-weight: 400;
+}

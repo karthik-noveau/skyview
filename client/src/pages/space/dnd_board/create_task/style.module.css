@@ -1,0 +1,27 @@
+.createTaskWrapper {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 5px 0px;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 5px;
+  padding-left: 10px;
+}
+.btnWrapper button {
+  font-size: 12px !important   ;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 6px 14px;
+  color: #373737;
+}
+
+.cancelBtn {
+  color: #cd1313 !important;
+  background-color: #ffdada;
+}

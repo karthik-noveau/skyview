@@ -1,0 +1,58 @@
+.tabWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: calc(100% - 40px);
+  border-bottom: 1px solid #eaeaea;
+}
+
+.tabContainer {
+  width: max-content;
+  background-color: none;
+  color: #4a4a4a;
+  padding: 0 5px 8px 5px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 0x;
+  cursor: pointer;
+  position: relative;
+}
+.tabContainer:hover .hoverLine {
+  border-bottom: 2px solid #3269d7;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  width: 100%;
+}
+.isActive {
+  background-color: none;
+  border-bottom: 2px solid #3269d7;
+  background-color: none;
+  font-weight: 500;
+}
+
+.createIcon {
+  font-size: 18px;
+  color: #797979;
+  border: 1px dashed #797979;
+  padding: 1.5px 2px;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  margin-left: 8px;
+  margin-bottom: 7px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.createIcon:hover {
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-color: #a8a8a8;
+  color: #515151;
+}
+
+.createBoard {
+  position: relative;
+  top: -5px;
+}

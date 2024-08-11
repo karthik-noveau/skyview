@@ -1,0 +1,94 @@
+.formValidation {
+  --font-family: "Poppins", sans-serif;
+  --input-bg-color: white;
+  --input-font-color: #595959;
+  --input-font-weight: 400;
+  --input-font-size: 13px;
+  --inpout-error-color: #c51036;
+  --input-border-color: transparent;
+  --input-placeholder-color: #959595;
+  --input-button-bg-color: #bf1f95;
+
+  --input-border-color-hover: #ffffff;
+}
+.formValidation :global(.ant-form-item input) {
+  height: 45px;
+  border-radius: 3px;
+  width: 100%;
+}
+.formValidation :global(.ant-form-item textarea) {
+  height: 65px;
+  border-radius: 3px;
+}
+.formValidation .ant-form-item input {
+  height: 45px;
+  border-radius: 3px;
+  background-color: var(--input-bg-color) !important;
+  color: var(--input-font-color);
+  font-family: var(--font-family);
+  font-size: var(--input-font-size);
+  font-weight: var(--input-font-weight);
+  letter-spacing: 0.5px;
+  border-color: var(--input-border-color) !important;
+}
+.formValidation .ant-form-item input::placeholder,
+.formValidation .ant-form-item textarea::placeholder {
+  color: var(--input-placeholder-color);
+  font-weight: 300;
+}
+.formValidation .ant-form-item textarea {
+  height: auto;
+  border-radius: 3px;
+  background-color: var(--input-bg-color) !important;
+  color: var(--input-font-color);
+  font-family: var(--font-family);
+  font-size: var(--input-font-size);
+  border-color: var(--input-border-color) !important;
+  font-weight: var(--input-font-weight);
+  letter-spacing: 0.5px;
+  box-shadow: none !important;
+}
+.formValidation .ant-input:hover {
+  border-color: var(--input-border-color-hover) !important;
+  transition: all 0.5s;
+  box-shadow: none !important;
+}
+.formValidation .ant-input:focus {
+  border-color: var(--input-border-color-hover) !important;
+}
+.formValidation .ant-form-item {
+  margin-bottom: 0px !important;
+}
+.formValidation .ant-form-item button {
+  background-size: 200% 100%;
+  background-position: right center;
+  width: 150px;
+  height: 40px;
+  transition: all 0.5s;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.formValidation .ant-btn-primary:hover {
+  transition: all 0.5s;
+  background-size: 200% 100%;
+  background-position: right center;
+}
+
+.formValidation .ant-form-item .ant-form-item-explain-error {
+  font-size: 12px;
+  color: var(--inpout-error-color);
+  padding-left: 10px;
+}
+
+/* ----------------media quries----------------
+  --------------------------------------------- */
+@media (max-width: 425px) {
+  .formValidation .ant-form-item button {
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+}

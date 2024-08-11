@@ -1,0 +1,24 @@
+.taskText {
+  font-size: 13px;
+  font-weight: 400;
+  color: #595959;
+}
+.dateText {
+  font-size: 12px;
+  font-weight: 300;
+  color: #5d5d5d;
+}
+.card {
+  display: grid;
+  gap: 7px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 10px;
+  cursor: grab;
+}
+
+.card:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

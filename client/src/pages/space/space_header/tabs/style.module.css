@@ -1,0 +1,81 @@
+.tabWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tabContainer {
+  width: max-content;
+  background-color: #f3f3f3;
+  color: #4a4a4a;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.tabContainer:hover {
+  background-color: #dce8ff;
+  color: #3269d7;
+}
+.isActive {
+  background-color: #dce8ff;
+  color: #3269d7;
+  font-weight: 500;
+}
+
+.createSpace {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  border-radius: 4px;
+}
+.createSpace input {
+  height: 28px !important;
+  box-shadow: none !important;
+}
+.createSpace Form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 4px;
+}
+.createSpace .btnWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10px;
+}
+.craeteBtn {
+  border: none;
+  font-size: 12px !important;
+  width: fit-content !important;
+  height: 20px !important;
+  padding: 0 13px;
+  color: #282828;
+  border-radius: 4px !important;
+  cursor: pointer;
+}
+.cancelBtn {
+  font-size: 21px;
+  color: #d63131;
+  cursor: pointer;
+}
+.createIcon {
+  font-size: 20px;
+  color: #797979;
+  border: 1px dashed #797979;
+  padding: 4.5px 6px;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.createIcon:hover {
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-color: #a8a8a8;
+  color: #515151;
+}
