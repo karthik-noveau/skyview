@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://woodheadevents.com/sitemap.xml
+Sitemap: # add sitemap url
